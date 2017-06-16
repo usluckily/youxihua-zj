@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>兑换记录</title>
+		<script src="js/scale_page.js"></script>
+		<script src="js_API\transformBasw64\transcoding.js"></script>
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="js/vue.js"></script>
+		<link rel="stylesheet" href="css/dui_huan_ji_lu.css" type="text/css"/>
+		<link rel="stylesheet" href="css/reset.css" type="text/css"/>
+	</head>
+	<body>
+		<!--这个是gif加载图-->
+		<div class="loadding_gif">
+		 	<img class="loadding_real_gif" src="imgs/loading/0-11.gif" />
+		 	<p>加载中，请稍后...</p>
+		</div>
+		<div class="bg" id="bg_wdxx">
+			<!--content作用：自动居中-->
+			<div class="content">
+				<!--导航栏-->
+				<nav class="nav">
+					<section class="nav_bg">
+						<label class="active first_nav_div">
+							<!--首页-->
+						</label>
+						<label class="second_nav_div">
+							<a href="main_integral.html" class="nav_a">
+								<!--积分商城-->
+							</a>
+						</label>
+						
+						<label class="third_nav_div">
+							<a href="pai_hang_bang.html" class="nav_a">
+								
+							</a>
+							<!--排行榜-->
+						</label>
+					</section>
+				</nav>
+				<!--房顶-->
+				<div class="roof">
+					
+				</div>
+				<!--下方内容-->
+				<div class="main_content_bg">
+					<div class="main_content">
+						<!--左边返回-->
+						<a href="main.html">
+							<span class="back">
+								
+							</span>
+						</a>
+						<!--<div class="read_and_no">
+							
+							<div class="is_read"></div>
+							<div></div>
+							
+						</div>-->
+						
+						
+						
+						<div class="read_and_no">
+							<div 
+								data-index="1"
+								class="no_read normal"
+								@click="changeLeft(1)"
+								:class="{'active':leftIndex==1}"
+								>
+								未兑换
+							</div>
+							<div 
+								data-index="2"
+								class="no_read normal"
+								@click="changeLeft(2)"
+								:class="{'active':leftIndex==2}"
+								>
+								兑换中
+							</div>
+							<div 
+								data-index="3"
+								class="no_read normal"
+								@click="changeLeft(3)"
+								:class="{'active':leftIndex==3}"
+								>
+								已兑换
+							</div>
+						</div>
+						
+						
+						
+						
+						
+						
+						<!--未兑换-->
+						<div 
+							class="main_world" 
+							id="wei_dui_huan"
+							v-show="leftIndex==1"
+							>
+							<header class="header_main_world">
+								<!--我的消息 > 未读-->
+								亲，这里是未兑换的信息~~~
+							</header>
+							
+							<ul class="list_detail"
+
+							>
+								
+								<li class="li_2"
+									v-for="item in wei_dui_huan"
+								>
+									
+									<div class="describe" style="font-size: 40px;">
+										{{item.exchangename}}
+									</div>
+									<div class="describe">
+									兑换积分：	{{item.exchangeintegral}}
+									</div>
+									<div class="describe">
+										兑换状态：	{{item.exchangestatus}}
+									</div>
+									<div class="describe_data">
+										{{item.exchangetime}}
+									</div>
+								</li>
+
+									
+							</ul>
+						</div>
+					
+						<!--兑换中-->
+						<div 
+							class="main_world" 
+							v-show="leftIndex==2"
+							id="dui_huan_zhong">
+							<header class="header_main_world">
+								<!--我的消息 > 未读-->
+								亲，这里是兑换中的信息~~~
+							</header>
+							
+							<ul class="list_detail">
+
+								<li class="li_2"
+									v-for="item in dui_huan_zhong"
+								>
+
+									<div class="describe">
+										{{item.exchangename}}
+									</div>
+									<div class="describe">
+										兑换积分：	{{item.exchangeintegral}}
+									</div>
+									<div class="describe">
+										兑换状态：	{{item.exchangestatus}}
+									</div>
+									<div class="describe_data">
+										{{item.exchangetime}}
+									</div>
+								</li>
+								
+
+							</ul>
+						</div>
+					
+						<!--已兑换-->
+						<div 
+							class="main_world" 
+							v-show="leftIndex==3"
+							>
+							<header class="header_main_world">
+								<!--我的消息 > 未读-->
+								亲，你最近兑换了这些物品~~~
+							</header>
+							
+							<ul class="list_detail">
+
+								<li class="li_4"
+									v-for="item in yi_dui_huan"
+								>
+
+									<div class="describe">
+										{{item.exchangename}}
+									</div>
+									<div class="describe">
+										兑换积分：	{{item.exchangeintegral}}
+									</div>
+									<div class="describe">
+										兑换状态：	{{item.exchangestatus}}
+									</div>
+									<div class="describe_data">
+										{{item.exchangetime}}
+									</div>
+								</li>
+									
+							</ul>
+						</div>
+					
+					</div>
+				</div>	
+			</div>
+					
+				
+				
+				
+				<!--这个是margin0 auto 的div闭合-->
+			</div>
+			<!--这个是背景图片的闭合-->
+		
+		
+		<script src="js/fastclick.js"></script>
+        <script>
+            $(function() {
+                FastClick.attach(document.body);
+            });
+        </script>
+		<!--加载IP头部地址信息-->
+		<script src="js_API/ipAdress/IPheader.js"></script>
+		<script src="js/height.js"></script>
+        <script src="js/ripple.js"></script>
+		<script src="js_API/dui_huan_ji_lu/initData.js"></script>
+		<script type="text/javascript">
+//			预加载图片的地址
+			var imgsList = [
+				{"img":"imgs/first-page-imgs/bg_cercil.png"},
+				{"img":"imgs/first-page-imgs/bg.png"},
+				{"img":"imgs/first-page-imgs/cercil.png"},
+				{"img":"imgs/first-page-imgs/draw.png"},
+				{"img":"imgs/first-page-imgs/identification-photo.png"},
+				{"img":"imgs/first-page-imgs/lantern.png"},
+				{"img":"imgs/first-page-imgs/middle_bg.png"},
+				{"img":"imgs/first-page-imgs/nav.png"},
+				{"img":"imgs/first-page-imgs/path_of_jifen.png"},
+				{"img":"imgs/first-page-imgs/person.png"},
+				{"img":"imgs/first-page-imgs/pet.png"},
+				{"img":"imgs/first-page-imgs/roof.png"},
+				{"img":"imgs/first-page-imgs/small_binggan.png"},
+				{"img":"imgs/first-page-imgs/small_box.png"},
+				{"img":"imgs/first-page-imgs/small_tomato.png"},
+				{"img":"imgs/first-page-imgs/small-bg.png"},
+				{"img":"imgs/wo_de_xiao_xi/btn_back.png"},
+				{"img":"imgs/wo_de_xiao_xi/dao.png"},
+				{"img":"imgs/wo_de_xiao_xi/inner_bg.png"},
+				{"img":"imgs/wo_de_xiao_xi/ka.png"},
+				{"img":"imgs/wo_de_xiao_xi/read_and_no.png"},
+				{"img":"imgs/dui_huan_ji_lu/shang_zi.png"}
+				
+			];
+			var currentLoadNum = 0;
+			for (var i = 0; i < imgsList.length; i++) {
+				var _img = document.createElement("img");
+				_img.src = imgsList[i].img;
+				
+					_img.onload = function(){
+						currentLoadNum++;
+	//					console.log('当前加载了'+currentLoadNum+"////总共图片数是"+imgsList.length);
+						if(currentLoadNum==imgsList.length){
+	//					console.log("加载完成了");
+						setTimeout(function(){
+							$(".loadding_gif").fadeOut();
+							$("#bg_wdxx").fadeIn();
+						});
+						
+					};
+				}
+			}
+			
+			
+		</script>
+	</body>
+	
+</html>

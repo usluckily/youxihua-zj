@@ -1,0 +1,30 @@
+{"code": "2", "data": {
+    "card": "000000571360353",
+    "stuid": "49184",
+    "classid": "1066",
+    "gradeid": "1",
+    "sid": "132",
+    "userid": "366435309",
+    "name": "陈子亮",
+    "classname": "一年级A班",
+    "nickname": "%E5%A5%BD%E8%90%8C%E5%95%8A",
+    "teacher": "陈佳琪",
+    "countIntegral": "2787",
+    "integral": "3226",
+    "picsummary": "http://hyjy.oss-cn-shenzhen.aliyuncs.com/132/366435309/image/20170516/1494896971489.jpg"
+    },
+    "datacount": [
+    {
+        "count": "31",
+        "name": "道具"
+    },
+    {
+        "count": "45",
+        "name": "卡片"
+    },
+    {
+        "count": "0",
+        "name": "礼品"
+    }
+    ],
+    "datadressup": [], "msg": "success", "medalname": "", "medalpic": "", "isshowintegralmall": "0"}

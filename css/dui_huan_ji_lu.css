@@ -1,0 +1,239 @@
+.bg {
+  width: 1920px;
+  height: 1080px;
+  background: url(../imgs/first-page-imgs/bg.png) no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  position: absolute;
+}
+.content {
+  width: 1743px;
+  height: 1080px;
+  margin: 0 auto;
+  position: relative;
+}
+.nav {
+  width: 1743px;
+  height: 117px;
+  position: relative;
+}
+.nav_bg {
+  position: absolute;
+  background: url(../imgs/first-page-imgs/nav.png) no-repeat;
+  background-size: cover ;
+  width: 1743px;
+  height: 117px;
+  z-index: 1;
+}
+.nav label {
+    display:inline-block;
+    position: absolute;
+    width: 475px;
+    height: 92px;
+    text-align: center;
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 92px;
+    margin-top: 25px;
+    color: #ab6231;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px;
+}
+.first_nav_div {
+  left: 80px;
+}
+.second_nav_div {
+  left: 638px;
+}
+.third_nav_div {
+  left: 1188px;
+}
+.nav_a {
+  text-align: center;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 72px;
+  color: #ab6231;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.nav .active {
+  color: white;
+}
+.nav div:first-child {
+  letter-spacing: 46px;
+}
+.roof {
+  width: 1920px;
+  height: 221px;
+  background: url(../imgs/wo_de_wu_pin/new_roof.png) no-repeat;
+  background-size: 100% 100% ;
+  position: absolute;
+  left: -90px;
+  top: 85px;
+  z-index: 9;
+}
+.main_content_bg {
+  width: 1746px;
+  height: 980px;
+  background: url(../imgs/first-page-imgs/small-bg.png) no-repeat;
+  background-size: 100% 100% ;
+}
+.main_content {
+  width: 1706px;
+  height: 890px;
+  background: url(../imgs/dui_huan_ji_lu/content_bg.png) no-repeat;
+  background-size: cover;
+  top: 40px;
+  left: 14px;
+  position: relative;
+}
+.back {
+  position: absolute;
+  width: 109px;
+  height: 61px;
+  background: url(../imgs/wo_de_xiao_xi/btn_back.png) no-repeat;
+  background-size: 100% 100% ;
+  left: -36px;
+  top: 135px;
+  cursor: pointer;
+}
+.main_world {
+  width: 1390px;
+  height: 760px;
+  position: absolute;
+  left: 228px;
+  top: 155px;
+}
+.header_main_world {
+  height: 60px;
+  border-bottom: 1px dotted #a76935;
+  font-size: 24px;
+  line-height: 60px;
+  font-weight: bold;
+  color: #772f20;
+  margin-bottom: 17px;
+}
+.list_detail {
+  height: 600px;
+  overflow-y: auto ;
+}
+.list_detail .li,
+.list_detail .li_1,
+.list_detail .li_2,
+.list_detail .li_3,
+.list_detail .li_4 {
+  width: 1286px;
+  height: 101px;
+  border-radius: 30px;
+  background-color: #fde7c2 ;
+  background-size: 100% 100% ;
+  background: url(../imgs/wo_de_xiao_xi/li.png) no-repeat;
+  margin-left: 22px;
+}
+.list_detail .li_1 {
+  background: url(../imgs/wo_de_xiao_xi/dao.png) no-repeat;
+  margin-left: 22px;
+}
+.list_detail .li_2 {
+  background: url(../imgs/wo_de_xiao_xi/ka.png) no-repeat;
+  margin-left: 42px;
+}
+.list_detail .li_3 {
+  background: url(../imgs/wo_de_xiao_xi/ban.png) no-repeat;
+  margin-left: 42px;
+}
+.list_detail .li_4 {
+  background: url(../imgs/dui_huan_ji_lu/shang_zi.png) no-repeat;
+  margin-left: 42px;
+}
+.read_box {
+  width: 151px;
+  height: 125px;
+  background: url(../imgs/wo_de_xiao_xi/read_and_no.png) no-repeat;
+}
+.read_and_no {
+  position: absolute;
+  width: 148px;
+  height: 275px;
+  background-size: 100% 100% ;
+  left: 8px;
+  top: 200px;
+}
+.redNoRead {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #ff3f3d ;
+  color: #000;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: bold;
+  color: white;
+  left: 92px;
+  top: 175px;
+}
+.main_content .read_and_no .active {
+  background: url(../imgs/wo_de_xiao_xi/read_and_no.png) no-repeat;
+  background-position: 0 -150px;
+  width: 150px;
+  height: 125px;
+}
+.read_and_no .normal {
+  background: url(../imgs/wo_de_xiao_xi/read_and_no.png) no-repeat;
+  background-position: 1px 2px;
+}
+.is_read {
+  width: 150px;
+  height: 125px;
+  font-size: 26px;
+  color: #772f20;
+  font-weight: bold;
+  line-height: 108px;
+  text-indent: 40px;
+  background: url(../imgs/wo_de_xiao_xi/read_and_no.png) no-repeat;
+  background-position: -9px -6px;
+}
+.no_read {
+  width: 143px;
+  height: 116px;
+  top: 138px;
+  margin-top: 20px;
+  line-height: 118px;
+  text-indent: 30px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #772f20;
+  cursor: pointer;
+}
+.describe {
+  line-height: 100px;
+  color: #772f20;
+  font-size: 32px;
+  font-weight: bold;
+  text-indent: 100px;
+  float: left;
+  margin-left: 10px;
+}
+.li_1 span,
+.li_2 span,
+.li_3 span,
+.li span {
+  line-height: 100px;
+  color:#772f20;
+  font-size: 22px;
+  font-weight: bold;
+  text-indent: 133px;
+  float: left;
+}
+.describe_data {
+  float: right;
+  line-height: 100px;
+  color: #a6765d;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 30px;
+}

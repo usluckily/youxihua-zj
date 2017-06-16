@@ -1,0 +1,35 @@
+.bg {
+  width: 1920px;
+  height: 1080px;
+  background: url(../imgs/login-imgs/login-bg.gif) no-repeat;
+  background-size: cover ;
+  position: relative;
+}
+
+.login_world {
+  width: 1405px;
+  height: 588px;
+  background: url(../imgs/login-imgs/login.png) no-repeat;
+  position: absolute;
+  left: 386px;
+  top: 230px;
+}
+.loginning {
+  width: 316px;
+  height: 60px;
+  position: absolute;
+  left: 430px;
+  top: 440px;
+  background: url(../imgs/login-imgs/please-brush-card.gif) no-repeat;
+  background-size: 100% 100% ;
+  display: none;
+}
+.is_login {
+  width: 240px;
+  height: 70px;
+  background: url(../imgs/login-imgs/loginning.gif) no-repeat;
+  background-size: 100% 100% ;
+  position: absolute;
+  left: 472px;
+  top: 440px;
+}

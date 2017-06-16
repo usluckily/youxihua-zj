@@ -1,0 +1,195 @@
+/*body,html{*/
+    /*font-family:"微软雅黑", sans-serif;*/
+/*}*/
+.bg {
+  width: 1920px;
+  height: 1080px;
+  background: url(../imgs/first-page-imgs/bg.png) no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  position: absolute;
+}
+.content {
+  width: 1743px;
+  height: 1080px;
+  margin: 0 auto;
+  position: relative;
+}
+.nav {
+  width: 1743px;
+  height: 117px;
+  position: relative;
+}
+.nav_bg {
+  position: absolute;
+  background: url(../imgs/first-page-imgs/nav.png) no-repeat;
+  background-size: cover ;
+  width: 1743px;
+  height: 117px;
+  z-index: 1;
+}
+.nav div {
+  position: absolute;
+  width: 475px;
+  height: 92px;
+  text-align: center;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 92px;
+  margin-top: 25px;
+  color: #ab6231;
+}
+.first_nav_div {
+  left: 84px;
+}
+.second_nav_div {
+  left: 638px;
+}
+.third_nav_div {
+  left: 1188px;
+}
+.nav_a {
+  text-align: center;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 72px;
+  color: #ab6231;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.nav .active {
+  color: white;
+}
+.nav div:first-child {
+  letter-spacing: 46px;
+}
+.roof {
+  width: 1920px;
+  height: 221px;
+  background: url(../imgs/wo_de_wu_pin/new_roof.png) no-repeat;
+  background-size: 100% 100% ;
+  position: absolute;
+  left: -90px;
+  top: 80px;
+  z-index: 9;
+}
+.main_content_bg {
+  width: 1746px;
+  height: 980px;
+  background: url(../imgs/path_ji_fen_li_cheng/all_bg.png) no-repeat;
+  background-size: 100% 100% ;
+  margin-top: 32px;
+  position: relative;
+}
+.main_content {
+  width: 1743px;
+  height: 774px;
+  padding-top: 190px;
+  position: relative;
+}
+.main_box {
+  position: absolute;
+  width: 486px;
+  height: 77px;
+  z-index: 99;
+  left: 138px;
+  top: 160px;
+}
+.leaf {
+  position: absolute;
+  width: 194px;
+  height: 70px;
+}
+.left_fen_shu {
+  width: 64px;
+  text-align: center;
+  height: 70px;
+  line-height: 81px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+    cursor: default;
+}
+.first_leaf {
+  left: 486px;
+}
+.right_data_detail {
+  width: 105px;
+  height: 70px;
+  position: absolute;
+  right: 20px;
+}
+.data {
+  font-size: 14px;
+  color: #fffd74;
+  font-weight: bold;
+  padding-top: 15px;
+  text-align: center;
+}
+.detail {
+  font-family: impact;
+  font-size: 22px;
+  color: #fffd74;
+  font-weight: bold;
+  text-align: center;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.tow {
+  left: 312px;
+  top: 86px;
+}
+.three {
+  left: 473px;
+  top: 173px;
+}
+.four {
+  left: 372px;
+  top: 289px;
+}
+.five {
+  left: 363px;
+  top: 392px;
+}
+.six {
+  left: 192px;
+  top: 477px;
+}
+.seven {
+  left: 843px;
+  top: 40px;
+}
+.eight {
+  left: 970px;
+  top: 132px;
+}
+.night {
+  left: 828px;
+  top: 204px;
+}
+.ten {
+  left: 931px;
+  top: 306px;
+}
+.elevent {
+  left: 971px;
+  top: 439px;
+}
+.twelve {
+  left: 1139px;
+  top: 521px;
+}
+.back {
+  position: absolute;
+  width: 109px;
+  height: 61px;
+  background: url(../imgs/wo_de_xiao_xi/btn_back.png) no-repeat;
+  background-size: 100% 100% ;
+  left: -165px;
+  top:-10px;
+    cursor: pointer;
+}

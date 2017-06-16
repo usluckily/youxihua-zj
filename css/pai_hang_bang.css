@@ -1,0 +1,650 @@
+body,html{
+    font-family:"微软雅黑", sans-serif;
+}
+.bg {
+  width: 1920px;
+  height: 1080px;
+  background: url(../imgs/first-page-imgs/bg.png) no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  position: absolute;
+}
+.content {
+  width: 1743px;
+  height: 1080px;
+  margin: 0 auto;
+  position: relative;
+}
+.nav {
+  width: 1743px;
+  height: 117px;
+  position: relative;
+}
+.nav_bg {
+  position: absolute;
+  background: url(../imgs/pai_hang_bang/nav_bg.png) no-repeat;
+  background-size: cover;
+  width: 1743px;
+  height: 117px;
+  z-index: 999;
+}
+.nav_bg2 {
+    position: absolute;
+    background: url(../imgs/pai_hang_bang/nav_bg.png) no-repeat;
+    background-size: cover;
+    width: 1743px;
+    height: 117px;
+    z-index: 999;
+}
+.nav_bg a {
+  position: absolute;
+}
+.nav label {
+  display: inline-block;
+  position: absolute;
+  width: 475px;
+  height: 92px;
+  text-align: center;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 92px;
+  margin-top: 25px;
+  color: #ab6231;
+  z-index: 99;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px;
+}
+.first_nav_div {
+  left: 84px;
+}
+.second_nav_div {
+  left: 638px;
+}
+.third_nav_div {
+  left: 1188px;
+}
+.nav_a {
+  position: absolute;
+  text-align: center;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 72px;
+  color: #ab6231;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: 9999;
+}
+.nav .active {
+  color: white;
+}
+.nav div:first-child {
+  letter-spacing: 46px;
+}
+.roof {
+  width: 1920px;
+  height: 221px;
+  background: url(../imgs/pai_hang_bang/roof.png) no-repeat;
+  background-size: 100% 100% ;
+  position: absolute;
+  left: -90px;
+  top: 60px;
+  z-index: 1;
+}
+.main_content_bg {
+  width: 1746px;
+  height: 980px;
+  background: url(../imgs/first-page-imgs/small-bg.png) no-repeat;
+  background-size: 100% 100% ;
+}
+.main_content {
+  width: 1743px;
+  height: 774px;
+  padding-top: 190px;
+  position: relative;
+}
+.nav_left {
+  width: 135px;
+  height: 774px;
+  float: left;
+}
+.real_denglong {
+  width: 150px;
+  height: 560px;
+  background: url(../imgs/pai_hang_bang/deng.png) no-repeat;
+  background-size: 100% 100%;
+  margin-top: -86px;
+  margin-left: 5px;
+  position: relative;
+}
+.real_denglong p {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  padding: 50px 34px 0 32px;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+.first_deng_long {
+  width: 136px;
+  height: 180px;
+  background-size: cover;
+  position: absolute;
+  top: 27px;
+  left: 1px;
+  cursor: pointer;
+}
+.p1_dl{
+    cursor: pointer;
+}
+.p2_dl{
+    cursor: pointer;
+}
+.p3_dl{
+    cursor: pointer;
+}
+.second_deng_long {
+  width: 136px;
+  height: 180px;
+  background-size: cover;
+  position: absolute;
+  top: 195px;
+  left: 1px;
+  cursor: pointer;
+}
+.third_deng_long {
+  width: 136px;
+  height: 180px;
+  background-size: cover;
+  position: absolute;
+  top: 363px;
+  left: 1px;
+  cursor: pointer;
+}
+.nav_left .active {
+  background: url(../imgs/pai_hang_bang/active_deng_long.png) no-repeat;
+  background-size: cover;
+}
+.nav_left .active3 {
+  background: url(../imgs/pai_hang_bang/active3.png) no-repeat;
+  background-size: 100% 82%;
+}
+.middle_part {
+  width: 871px;
+  height: 946px;
+  background: url(../imgs/first-page-imgs/middle_bg.png) no-repeat;
+  background-size: cover ;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  z-index: -1;
+}
+.iner_content {
+  position: absolute;
+  background: pink;
+  width: 1587px;
+  height: 907px;
+  left: 138px;
+  top: 40px;
+  background: url(../imgs/pai_hang_bang/main_bg.png) no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+.search_part {
+  width: 1520px;
+  height: 58px;
+  margin-top: 117px;
+  margin-left: 45px;
+}
+.inp_search {
+  width: 845px;
+  height: 65px;
+  background: url(../imgs/pai_hang_bang/bg_input.png) no-repeat;
+  background-size: 100% 100% ;
+  position: absolute;
+  text-indent: 28px;
+  line-height: 58px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  outline: none;
+  border: 0;
+  color: #feef00;
+    top:107px;
+}
+.inp_search input {
+  background-color: transparent ;
+  border: none;
+  outline: none;
+  color: white;
+  position: absolute;
+  left: 30px;
+  top: 22px;
+  width: 800px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.inp_search input::-webkit-input-placeholder {
+  color: #feef00;
+}
+.btn_search {
+  width: 112px;
+  height: 64px;
+  position: absolute;
+  left: 900px;
+  background: url(../imgs/pai_hang_bang/sear_btn.png) no-repeat;
+  background-size: cover;
+  top:107px;
+  cursor: pointer;
+}
+.wo_de_pai_ming {
+  width: 190px;
+  height: 67px;
+  position: absolute;
+  right: 37px;
+  background: url(../imgs/pai_hang_bang/wo_de_pai_ming.png) no-repeat;
+  background-size: 100% 100%;
+  top:107px;
+  cursor: pointer;
+}
+.qian_san_bang {
+  width: 1520px;
+  height: 340px;
+  background: url(../imgs/pai_hang_bang/qian_san_bang.png) no-repeat;
+  background-size: cover ;
+  margin-left: 35px;
+  overflow: hidden;
+  position: relative;
+}
+.secend_man {
+  width: 500px;
+  height: 332px;
+  float: left;
+  margin-top: 8px;
+}
+.qian_san_bang header {
+  width: 480px;
+  height: 77px;
+  margin-right: -20px;
+}
+.huangguan,
+.huang_huan_3 {
+  width: 198px;
+  height: 76px;
+  background: url(../imgs/pai_hang_bang/huang_guan.png) no-repeat;
+  background-size: cover ;
+  margin-left: 25px;
+  position: relative;
+  float: left;
+}
+.huang_huan_3 {
+  background: url(../imgs/pai_hang_bang/third_huang_guan.png) no-repeat;
+}
+.huang_huan1 {
+  width: 198px;
+  height: 76px;
+  background: url(../imgs/pai_hang_bang/first_huang_guan.png) no-repeat;
+  background-size: cover ;
+  margin-left: 25px;
+  position: relative;
+  float: left;
+}
+.name_huang_guan,
+.name_huang_guan1 {
+  /*width: 86px;*/
+  height: 32px;
+  position: absolute;
+  left: 75px;
+  top: 18px;
+  font-size: 20px;
+  color: #feef00;
+  font-weight: bold;
+  line-height: 40px;
+  top: 24px;
+  letter-spacing: 4px;
+  cursor: default;
+}
+.name_huang_guan1 {
+  line-height: 44px;
+  margin-top: 0px;
+  text-indent: 15px;
+}
+.dao_ju_1 {
+  width: 86px;
+  height: 32px;
+  float: left;
+  margin-top: 25px;
+}
+.dao_ju_2,
+.dao_ju_3 {
+  width: 80px;
+  height: 32px;
+  float: left;
+  margin-top: 25px;
+}
+.box1,
+.tomato,
+.bing_gan {
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  display: inline-block;
+  float: left;
+  margin-left: 4px;
+  margin-top: 6px;
+}
+.box1 {
+  background: url(../imgs/pai_hang_bang/box.png) no-repeat;
+}
+.tomato {
+  background: url(../imgs/pai_hang_bang/qie_zi.png) no-repeat;
+}
+.bing_gan {
+  background: url(../imgs/pai_hang_bang/bing_gan.png) no-repeat;
+}
+.ge_shu {
+  font-size: 16px;
+  color: white;
+  float: left;
+  line-height: 38px;
+  text-indent: 5px;
+  margin-left: 5px;
+  text-shadow: 1px 1px #212a3a;
+  font-weight: bold;
+}
+.content_man {
+  width: 480px;
+  height: 255px;
+  position: relative;
+  z-index: 999;
+}
+.all_ji_fen_part,
+.sheng_yu_ji_fen_part {
+  width: 100px;
+  height: 55px;
+  position: absolute;
+  left: 55px;
+  top: 100px;
+}
+.all_ji_fen_part1 {
+  top: 28px;
+}
+.all_ji_fen,
+.sheng_yu_ji_fen {
+  font-size: 18px;
+  color: #aa1259;
+  font-weight: bold;
+  text-indent: 12px;
+}
+.sheng_yu_ji_fen {
+  text-indent: 0;
+  color: #964181;
+}
+.ge_shu2 {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  text-indent: 20px;
+}
+.sheng_yu_ji_fen_part {
+  left: 55px;
+  top: 155px;
+  margin-top: 20px;
+}
+.sheng_yu_ji_fen_part1 {
+  left: 390px;
+  top: 12px;
+}
+.main_person,
+.main_person1,
+.main_person3 {
+  width: 374px;
+  height: 260px;
+  position: absolute;
+  background-size: 100% 100%;
+  left: 53px;
+  top: -28px;
+  overflow: hidden;
+}
+.main_person {
+  transform: scale(0.95);
+  top: -9px;
+}
+.img_person2 {
+  width: 126px;
+  height: 221px;
+  position: absolute;
+  top: 38px;
+  left: 144px;
+  background: url(../imgs/pai_hang_bang/person_3.png) no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+.di_person2 {
+  width: 375px;
+  height: 82px;
+  background: url(../imgs/pai_hang_bang/di_second.png) no-repeat;
+  background-size: 100% 100% ;
+  position: absolute;
+  left: 18px;
+  top: 216px;
+}
+.main_person3 {
+  transform: scale(0.95);
+  top: -9px;
+}
+.img_person3 {
+  width: 126px;
+  height: 221px;
+  position: absolute;
+  top: 44px;
+  left: 121px;
+  background: url(../imgs/pai_hang_bang/girl.png) no-repeat;
+  background-size: 100% 100%;
+  z-index: 10;
+}
+.di_person3 {
+  width: 375px;
+  height: 82px;
+  background: url(../imgs/pai_hang_bang/di_third.png) no-repeat;
+  background-size: 100% 100% ;
+  position: absolute;
+  left: 18px;
+  top: 216px;
+}
+.main_person1 {
+  transform: scale(1.1);
+}
+.img_person1 {
+  width: 170px;
+  height: 200px;
+  position: absolute;
+  top: 40px;
+  left: 129px;
+  background: url(../imgs/pai_hang_bang/man1.png) no-repeat;
+  background-size: 100% 100% ;
+  z-index: 10;
+}
+.di_person1 {
+  width: 387px;
+  height: 102px;
+  background: url(../imgs/pai_hang_bang/di_first.png) no-repeat;
+  background-size: 100% 100% ;
+  position: absolute;
+  left: 18px;
+  top: 193px;
+}
+.list_detail {
+  width: 1518px;
+  height: 306px;
+  margin-left: 27px;
+  margin-top: 9px;
+  padding-left: 10px;
+  overflow-x: hidden;
+}
+.list_detail li {
+  width: 1503px;
+  height: 67px;
+  border: 3px solid #ff6b12;
+  border-radius: 30px;
+  background-color: #fde7c2 ;
+  margin-bottom: 4px;
+}
+.ranking {
+  width: 80px;
+  height: 38px;
+  margin-left: 20px;
+  line-height: 67px;
+  font-size: 33px;
+  font-weight: bold;
+  color: #ff4f00;
+  float: left;
+  text-shadow: 0 0 5px #e3643e;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 1px #e3643e;
+}
+.ranking4 {
+  width: 80px;
+  height: 38px;
+  margin-left: 20px;
+  line-height: 67px;
+  font-size: 33px;
+  font-weight: bold;
+  color: #fff000;
+  float: left;
+  text-shadow: 0 0 10px #e3643e;
+}
+.ranking5 {
+  width: 80px;
+  height: 38px;
+  margin-left: 20px;
+  line-height: 67px;
+  font-size: 33px;
+  font-weight: bold;
+  color: #fff000;
+  float: left;
+  text-shadow: 0 0 10px #e3643e;
+}
+.icon_this {
+  width: 36px;
+  height: 62px;
+  background: url(../imgs/pai_hang_bang/small_icon.png) no-repeat;
+  background-size: cover ;
+  margin-left: 40px;
+  float: left;
+}
+.name_this {
+  width: 160px;
+  line-height: 67px;
+  font-size: 33px;
+  text-shadow: 0 0 2px #e3643e;
+  color: #ff4f00;
+  float: left;
+  margin-left: 20px;
+}
+.things {
+  width: 153px;
+  height: 67px;
+  line-height: 67px;
+  font-size: 24px;
+  text-shadow: 0 0 2px #e3643e;
+  float: left;
+  margin-left: 20px;
+  color: #d3742e;
+}
+.red_ji_fen1 {
+  width: 200px;
+  height: 67px;
+  line-height: 67px;
+  font-size: 24px;
+  text-shadow: 0 0 2px #e3643e;
+  color: #ff4f00;
+  float: left;
+  margin-left: 170px;
+  color: #d5292b;
+}
+.red_ji_fen2 {
+  width: 170px;
+  height: 67px;
+  line-height: 67px;
+  font-size: 24px;
+  text-shadow: 0 0 2px #e3643e;
+  color: #ff4f00;
+  float: left;
+  margin-left: 30px;
+  color: #d5292b;
+}
+.new_img1_nj {
+  background-image: url(../imgs/pai_hang_bang/girl.png);
+  background-size: 75% 100% ;
+}
+.new_img2_nj {
+  background-image: url(../imgs/pai_hang_bang/person_3.png);
+}
+/*.new_img3_nj {*/
+  /*background-image: url(../imgs/pai_hang_bang/man1.png);*/
+/*}*/
+.new_img1_xx {
+  background-image: url(../imgs/pai_hang_bang/person_3.png);
+  background-size: 75% 100% ;
+}
+/*.new_img2_xx {*/
+  /*background-image: url(../imgs/pai_hang_bang/man1.png);*/
+/*}*/
+.new_img3_xx {
+  background-image: url(../imgs/pai_hang_bang/girl.png);
+}
+.strong_world {
+  font-weight: bold!important;
+  font-size: 30px !important;
+}
+.show_pai_ming {
+  letter-spacing: 2px !important;
+}
+.header_list_detail {
+  display: none;
+  padding-top: 200px;
+  width: 1518px;
+  height: 600px;
+  margin-left: 27px;
+  margin-top: 9px;
+  padding-left: 10px;
+  overflow-x: hidden;
+  position: absolute;
+  z-index: 99;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 252px;
+  bottom: 20px;
+}
+#cha {
+  width: 72px;
+  height: 112px;
+  background: url(../imgs/pai_hang_bang/close-1.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  border: 0;
+  border-radius: 0;
+}
+#detail_search {
+  width: 700px;
+  height: 80px;
+  position: absolute;
+  left: 380px;
+  top: 54px;
+  text-align: center;
+  line-height: 67px;
+  font-size: 24px;
+  color: #d3742e;
+  font-weight: bold;
+}
+.search_name {
+  font-size: 36px;
+}
+[v-cloak]{
+    display: none;
+}

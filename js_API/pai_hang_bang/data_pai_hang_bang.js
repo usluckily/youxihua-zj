@@ -1,0 +1,116 @@
+//_data._dataGrade.No1.name
+//班级排名
+var _dataClass = [
+	{
+		name:"大神",
+		boxNum:1,
+		tomatoNum:2,
+		biscuitNum:3,
+		allIntegral:4,
+		restIntegral:5
+	},
+	{
+		name:"二神",
+		boxNum:1020,
+		tomatoNum:200,
+		biscuitNum:300,
+		allIntegral:400,
+		restIntegral:500
+	},
+	{
+		name:"三神",
+		boxNum:50,
+		tomatoNum:90,
+		biscuitNum:70,
+		allIntegral:60,
+		restIntegral:10
+	},
+	{
+		name:"四神",
+		boxNum:70,
+		tomatoNum:80,
+		biscuitNum:90,
+		allIntegral:30,
+		restIntegral:20
+	}
+];
+//年级排名
+var _dataGrade = [
+	{
+		name:"大哥",
+		boxNum:10,
+		tomatoNum:20,
+		biscuitNum:30,
+		allIntegral:40,
+		restIntegral:50
+	},
+	{
+		name:"二哥",
+		boxNum:103,
+		tomatoNum:9000,
+		biscuitNum:5000,
+		allIntegral:3000,
+		restIntegral:1000
+	},
+	{
+		name:"三哥",
+		boxNum:30,
+		tomatoNum:410,
+		biscuitNum:330,
+		allIntegral:290,
+		restIntegral:130
+	},
+	{
+		name:"四哥",
+		boxNum:27,
+		tomatoNum:78,
+		biscuitNum:39,
+		allIntegral:123,
+		restIntegral:302
+	}
+];
+//学校排名
+var _dataSchool = [
+	{
+		name:"小凯1",
+		boxNum:1,
+		tomatoNum:2,
+		biscuitNum:3,
+		allIntegral:4,
+		restIntegral:5
+	},
+	{
+		name:"小丽2",
+		boxNum:1000,
+		tomatoNum:2000,
+		biscuitNum:3000,
+		allIntegral:4000,
+		restIntegral:5000
+	},
+	{
+		name:"小方3",
+		boxNum:50,
+		tomatoNum:40,
+		biscuitNum:30,
+		allIntegral:20,
+		restIntegral:10
+	},
+	{
+		name:"小丽4",
+		boxNum:7,
+		tomatoNum:8,
+		biscuitNum:9,
+		allIntegral:3,
+		restIntegral:2
+	},
+	{
+		name:"小丽5",
+		boxNum:36,
+		tomatoNum:35,
+		biscuitNum:34,
+		allIntegral:33,
+		restIntegral:32
+	}
+]
+
+

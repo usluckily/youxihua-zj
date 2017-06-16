@@ -1,0 +1,75 @@
+var _data = {
+	No1:{
+		name:"小凯",
+		boxNum:10,
+		tomatoNum:116,
+		biscuitNum:6,
+		allIntegral:216,
+		restIntegral:156
+	},
+	No2:{
+		name:"小丽",
+		boxNum:10,
+		tomatoNum:116,
+		biscuitNum:6,
+		allIntegral:216,
+		restIntegral:156
+	},
+	No3:{
+		name:"小方",
+		boxNum:10,
+		tomatoNum:116,
+		biscuitNum:6,
+		allIntegral:216,
+		restIntegral:156
+	},
+	No4:{
+		name:"小丽4",
+		boxNum:10,
+		tomatoNum:116,
+		biscuitNum:6,
+		allIntegral:216,
+		restIntegral:156
+	},
+	No5:{
+		name:"小丽5",
+		boxNum:10,
+		tomatoNum:116,
+		biscuitNum:6,
+		allIntegral:216,
+		restIntegral:156
+	},
+	No6:{
+		name:"小丽6",
+		boxNum:10,
+		tomatoNum:116,
+		biscuitNum:6,
+		allIntegral:216,
+		restIntegral:156
+	},
+	No7:{
+		name:"小丽7",
+		boxNum:10,
+		tomatoNum:116,
+		biscuitNum:6,
+		allIntegral:216,
+		restIntegral:156
+	},
+	No8:{
+		name:"小丽8",
+		boxNum:10,
+		tomatoNum:116,
+		biscuitNum:6,
+		allIntegral:216,
+		restIntegral:156
+	}
+	
+};
+
+
+var vm_bg_pai_hang_bang = new Vue({
+	el:"#bg_pai_hang_bang",
+	data:{
+		_data:_data
+	}
+})

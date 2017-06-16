@@ -1,0 +1,696 @@
+body,html{
+    font-family:"微软雅黑", sans-serif;
+}
+.bg {
+  width: 1920px;
+  height: 1080px;
+  background: url(../imgs/ji_fen_shang_cheng/bg.png) no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+.content {
+  width: 1743px;
+  height: 1080px;
+  margin: 0 auto;
+  position: relative;
+}
+.nav {
+  width: 1743px;
+  height: 117px;
+  background-size: 100% 100% ;
+  margin-bottom: 30px;
+  position: relative;
+}
+.rel_nav {
+  background: url(../imgs/ji_fen_shang_cheng/nav.png) no-repeat;
+  position: absolute;
+  width: 1743px;
+  height: 117px;
+}
+.nav label {
+  display: inline-block;
+  float: left;
+  width: 475px;
+  height: 92px;
+  text-align: center;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 72px;
+  margin-top: 25px;
+  color: #ab6231;
+  margin-left: 80px;
+  border-top-left-radius: 20px;
+  border-top-right-radius:20px;
+}
+.nav_a {
+  text-align: center;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 72px;
+  color: #ab6231;
+}
+.nav .active {
+  color: white;
+}
+.nav div:first-child {
+  letter-spacing: 46px;
+}
+.content {
+  width: 1743px;
+  height: 1080px;
+  margin: 0 auto;
+  position: relative;
+}
+.nav {
+  width: 1743px;
+  height: 117px;
+  position: relative;
+}
+.nav div {
+  position: absolute;
+  width: 475px;
+  height: 92px;
+  text-align: center;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 92px;
+  margin-top: 25px;
+  color: #ab6231;
+}
+.first_nav_div {
+  left: 84px;
+}
+.second_nav_div {
+  left: 638px;
+}
+.third_nav_div {
+  left: 1188px;
+}
+.nav_a {
+  text-align: center;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 72px;
+  color: #ab6231;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.nav .active {
+  color: white;
+}
+.nav div:first-child {
+  letter-spacing: 46px;
+}
+.roof {
+  width: 1920px;
+  height: 221px;
+  background: url(../imgs/ji_fen_shang_cheng/unbrelar.png) no-repeat;
+  background-size: 100% 100% ;
+  position: absolute;
+  left: -90px;
+  top: 116px;
+  z-index: 9;
+}
+.main_content_bg {
+  width: 1740px;
+  height: 8rem;
+  background: url(../imgs/first-page-imgs/small-bg.png) no-repeat;
+  background-size: 100% 100% ;
+}
+.main_content {
+  width: 1743px;
+  height: 774px;
+  padding-top: 190px;
+  position: relative;
+}
+.bai_ban_bg {
+  width: 1712px;
+  height: 970px;
+  background: url(../imgs/ji_fen_shang_cheng/content_bg.png);
+  background-size: 100% 100% ;
+  margin-left: 10px;
+  margin-top: 100px;
+}
+.left_three_nav {
+  width: 155px;
+  height: 545px;
+  position: relative;
+}
+.inner {
+  position: relative;
+}
+.btns_lef_nav {
+  position: absolute;
+  width: 159px;
+  height: 394px;
+  background-size: 100% 100% ;
+  left: 7px;
+  top: 120px;
+}
+.btns_lef_nav div {
+  font-size: 24px;
+  color: white;
+    height: 110px;
+  line-height: 117px;
+  margin-bottom: 35px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.pet_introduce {
+  width: 1530px;
+  height: 500px;
+  border: 1px dotted #a76935;
+  position: absolute;
+  left: 170px;
+  top: 60px;
+  border-radius: 30px;
+}
+.left_img_pet {
+  width: 530px;
+  height: 500px;
+  background: url(../imgs/ji_fen_shang_cheng/zhan_shi_di.png) no-repeat;
+  display: inline-block;
+  background-size: 69% 69%;
+  background-position: 87px 21px;
+  position: relative;
+  text-align: center;
+}
+.iner_pet {
+  width: 182px;
+  height: 271px;
+  background: url(../imgs/ji_fen_shang_cheng/iner_pet.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 160px;
+  top: 40px;
+}
+.iner_card {
+  /*width: 266px;*/
+  height: 220px;
+  background-size: 100% 100%;
+  position: relative;
+  /*left: 133px;*/
+  top: 60px;
+}
+.iner_dao_ju {
+  width: 230px;
+  height: 220px;
+  background: url(../imgs/ji_fen_shang_cheng/img_ml.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 140px;
+  top: 60px;
+}
+.introduce_pet {
+  width: 1000px;
+  height: 250px;
+  border-bottom: 4px dotted #a76935;
+  position: absolute;
+  left: 490px;
+  top: 35px;
+}
+.header_introduce_pet {
+  width: 1000px;
+  height: 68px;
+  border-bottom: 4px dotted #a76935;
+}
+.pet_name {
+  width: 260px;
+  height: 51px;
+  background-color: #c58c5f ;
+  border-radius: 40px;
+  position: absolute;
+  top: 7px;
+  font-size: 37px;
+  font-weight: bold;
+  color: #772f20;
+  line-height: 51px;
+  text-align: center;
+  -webkit-text-stroke: 2px #fee988;
+  cursor: default;
+}
+.have_num .num_pet,
+.have_num .num_card {
+  font-size: 42px;
+}
+.have_num .num_dao {
+  font-size: 42px;
+}
+.have_num {
+  width: 250px;
+  height: 25px;
+  line-height: 25px;
+  color: #772f20;
+  font-size: 25px;
+  left: 440px;
+  top: 30px;
+  position: absolute;
+  font-weight: bold;
+  cursor: default;
+}
+.jifen_now {
+  height: 35px;
+  position: absolute;
+  left: 700px;
+  top: 10px;
+  font-weight: bold;
+  color: #772f20;
+  font-size: 25px;
+  letter-spacing: 2px;
+    cursor: default;
+}
+.my_integral {
+  font-size: 42px;
+  display: inline-block;
+}
+.detail_introduce_pet {
+  position: relative;
+}
+.left_detail_introduce_pet {
+  width: 750px;
+  height: 200px;
+  float: left;
+  font-size: 22px;
+  font-weight: bold;
+  color: #772f20;
+}
+.left_detail_introduce_pet .p1 {
+  text-indent: 40px;
+  line-height: 75px;
+  height: 30px;
+}
+.left_detail_introduce_pet .p2 {
+  line-height: 35px;
+  padding-left: 35px;
+}
+.shichuan {
+  width: 176px;
+  height: 73px;
+  background: url(../imgs/ji_fen_shang_cheng/try_dress.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 25px;
+  top: 21px;
+}
+.duihuan {
+  width: 176px;
+  height: 73px;
+  background: url(../imgs/ji_fen_shang_cheng/dui_huan.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 25px;
+  top: 104px;
+  cursor: pointer;
+}
+.list_pet {
+  width: 1569px;
+  height: 444px;
+  background: url(../imgs/ji_fen_shang_cheng/listbg.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 150px;
+  top: 360px;
+}
+.list_kan_pian {
+  width: 1569px;
+  height: 390px;
+  background: url(../imgs/ji_fen_shang_cheng/listbg_kapian.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 150px;
+  top: 430px;
+}
+.ul_list_pet {
+  height: 55px;
+  position: absolute;
+  width: 1344px;
+  left: 40px;
+  top: -60px;
+  padding-left: 20px;
+}
+.ul_list_ka_pian {
+  height: 55px;
+  position: absolute;
+  width: 1344px;
+  left: 40px;
+  top: -55px;
+  text-align: center;
+}
+.ul_list_dao_ju {
+  height: 55px;
+  position: absolute;
+  width: 1344px;
+  left: 40px;
+  top: -55px;
+  text-align: center;
+}
+.ul_list_dao_ju li {
+  width: 230px !important;
+}
+.ul_list_ka_pian .active {
+  background-color: #f9e260 ;
+}
+.ul_list_pet li {
+  float: left;
+  width: 110px;
+  height: 55px;
+  margin-right: 20px;
+  background-color: #e9bb54 ;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.ul_list_ka_pian li,
+.ul_list_dao_ju li {
+  float: left;
+  width: 150px;
+  height: 55px;
+  margin-right: 20px;
+  text-align: center;
+  /*background-color: #e9bb54 ;*/
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  cursor: pointer;
+}
+.list_kan_pian .active_dao_ju {
+  background-color: #f9e260;
+}
+.starts_and_prices {
+  position: absolute;
+  width: 132px;
+  height: 34px;
+  background: url(../imgs/ji_fen_shang_cheng/price_world.png) no-repeat;
+  background-size: cover;
+  top: 154px;
+  left: 94px;
+  font-size: 12px;
+  line-height: 34px;
+  text-align: center;
+  color: #772f20;
+  font-weight: bold;
+}
+.img_every_card {
+  /*height: 154px !important;*/
+  /*position: absolute;*/
+  /*left: 80px;*/
+  /*top: 7px;*/
+}
+.icon0,
+.icon1,
+.icon2,
+.icon3,
+.icon4,
+.icon5,
+.icon6,
+.icon7,
+.icon8,
+.icon9 {
+  float: left;
+  width: 40px;
+  height: 42px;
+  margin-left: 14px;
+  margin-top: 11px;
+  background: url(../imgs/ji_fen_shang_cheng/icons.png) no-repeat;
+  background-size: 1100px 49px;
+    cursor: pointer;
+}
+.icon1 {
+  background-position: 0 -8px;
+}
+.icon2 {
+  background-position: -127px -8px;
+}
+.icon3 {
+  background-position: -261px -8px;
+}
+.icon4 {
+  background-position: -386px -8px;
+}
+.icon5 {
+  background-position: -520px -8px;
+}
+.icon6 {
+  background-position: -650px -8px;
+}
+.icon7 {
+  background-position: -780px -8px;
+}
+.icon8 {
+  background-position: -912px -8px;
+}
+.icon9 {
+  background-position: -1038px -8px;
+}
+.world_icon {
+  font-size: 22px;
+  color: #772f20;
+  line-height: 70px;
+  float: left;
+  font-weight: bold;
+    cursor: pointer;
+}
+.world_icon_ka_pian {
+  width: 100%;
+}
+.icon_sex {
+  width: 75px;
+  height: 44px;
+  background-size: 100% 100% ;
+  position: absolute;
+  left: 50px;
+  top: 11px;
+}
+.icon_sex_boy {
+  background: url(../imgs/ji_fen_shang_cheng/man_icon.png) no-repeat;
+}
+.icon_sex_girl {
+  background: url(../imgs/ji_fen_shang_cheng/girl_icon.png) no-repeat;
+}
+.icon_sex_ka_pian {
+  top: 11px;
+}
+.list_real_pets {
+  position: absolute;
+  width: 1510px;
+  height: 360px;
+  top: 67px;
+  left: 30px;
+}
+.list_real_ka_pian,
+.list_real_dao_ju {
+  position: absolute;
+  width: 1510px;
+  height: 360px;
+  top: 14px;
+  /*left: 60px;*/
+}
+.list_real_pets li {
+  width: 282px;
+  height: 214px;
+  overflow: hidden;
+  position: absolute;
+   
+}
+.list_real_ka_pian li {
+  width: 280px;
+  height: 175px;
+  /*overflow: hidden;*/
+  display: inline-block;
+  position: relative;
+    
+}
+.list_real_dao_ju li {
+  width: 340px;
+  height: 214px;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+   
+}
+.list_real_dao_ju li .img_every_card {
+  width: 202px;
+}
+.second_pet_li {
+  left: 352px;
+}
+.third_pet_li {
+  left: 632px;
+}
+.four_pet_li {
+  left: 912px;
+}
+.five_pet_li {
+  left: 1192px;
+}
+.pet_img {
+  width: 240px;
+  height: 185px;
+  background: url(../imgs/ji_fen_shang_cheng/im.png) no-repeat;
+  background-size: 1300px 377px;
+  position: absolute;
+}
+.pet_img1 {
+  background-position: -2px -20px;
+  left: 97px;
+}
+.pet_img11 {
+  background-position: 0px -198px;
+  left: 97px;
+}
+.pet_img2 {
+  background-position: -260px -20px;
+  left: 20px;
+}
+.pet_img22 {
+  background-position: -260px -198px;
+  left: 20px;
+}
+.pet_img3 {
+  background-position: -533px -20px;
+  left: 24px;
+}
+.pet_img33 {
+  background-position: -533px -198px;
+  left: 24px;
+}
+.pet_img4 {
+  background-position: -850px -20px;
+  left: 62px;
+}
+.pet_img44 {
+  background-position: -837px -198px;
+  left: 62px;
+}
+.pet_img5 {
+  background-position: -1156px -20px;
+  left: 46px;
+}
+.pet_img55 {
+  background-position: -1134px -198px;
+  left: 46px;
+}
+.ul_list_pets_2 {
+  top: 252px;
+}
+.ul_list_ka_pian2 {
+  top: 200px;
+}
+.starts_and_prices1 {
+  position: relative;
+  width: 132px;
+  height: 34px;
+  background: url(../imgs/ji_fen_shang_cheng/price_world.png) no-repeat;
+  background-size: cover;
+  top: 154px;
+  /*left: 94px;*/
+  font-size: 12px;
+  line-height: 34px;
+  text-align: center;
+  color: #772f20;
+  font-weight: bold;
+}
+.starts_and_prices2 {
+  position: relative;
+  width: 132px;
+  height: 34px;
+  background: url(../imgs/ji_fen_shang_cheng/price_world.png) no-repeat;
+  background-size: cover ;
+  top: 154px;
+  /*left: 38px;*/
+  font-size: 12px;
+  line-height: 34px;
+  text-align: center;
+  color: #772f20;
+  font-weight: bold;
+}
+.starts_and_prices3 {
+  position: relative;
+  width: 132px;
+  height: 34px;
+  background: url(../imgs/ji_fen_shang_cheng/price_world.png) no-repeat;
+  background-size: cover ;
+  top: 154px;
+  /*left: 50px;*/
+  font-size: 12px;
+  line-height: 34px;
+  text-align: center;
+  color: #772f20;
+  font-weight: bold;
+}
+.starts_and_prices4 {
+  position: relative;
+  width: 132px;
+  height: 34px;
+  background: url(../imgs/ji_fen_shang_cheng/price_world.png) no-repeat;
+  background-size: cover ;
+  top: 154px;
+  /*left: 80px;*/
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 34px;
+  text-align: center;
+  color: #772f20;
+}
+.starts_and_prices5 {
+  position: relative;
+  width: 132px;
+  height: 34px;
+  background: url(../imgs/ji_fen_shang_cheng/price_world.png) no-repeat;
+  background-size: cover ;
+  top: 154px;
+  /*left: 48px;*/
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 34px;
+  text-align: center;
+  color: #772f20;
+}
+.secend_line li {
+  margin-top: -5px;
+}
+.first_left_change {
+  width: 71px;
+  height: 70px;
+  position: absolute;
+  top: 128px;
+  left: -12px;
+  background: url(../imgs/ji_fen_shang_cheng/left_change.png);
+  background-size: cover ;
+  display: none;
+}
+.secend_left_change {
+  width: 71px;
+  height: 70px;
+  position: absolute;
+  top: 280px;
+  left: -12px;
+  background: url(../imgs/ji_fen_shang_cheng/left_change.png);
+  background-size: cover ;
+}
+.first_left_change,
+.first_right_change,
+.second_left_change,
+.second_right_change {
+  display: none;
+}
+.dui_huan_shuo_ming {
+  width: 217px;
+  height: 170px;
+  background: url(../imgs/ji_fen_shang_cheng/dui_huan_shuo_ming.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 50px;
+  left: -90px;
+}
+.wra {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 0;
+  top: 0;
+}
+.zb {
+  position: absolute;
+}

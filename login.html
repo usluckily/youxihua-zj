@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>登陆</title>
+		<script src="js/scale_page.js"></script>
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<link rel="stylesheet" href="css/login.css" type="text/css"/>
+		<link rel="stylesheet" href="css/reset.css" type="text/css"/>
+        <style type="text/css">
+            .xbj{
+                width: 100%;
+                text-align: center;
+                margin-top: 100px;
+            }
+            .sr{
+                font-family: "方正粗圆简体";
+                position: absolute;
+                z-index:1;
+                top:500px;
+                left:608px;
+                width: 767px;
+                height: 330px;
+                /*border: 1px solid red;*/
+            }
+            .sr p{
+                margin-top: 15px;
+                text-align: center;
+                color: #DB8100;
+                font-size: 25px;
+                font-weight: bold;
+            }
+            .top{
+                margin-top: 34px;
+                height: 60px;
+                width: 767px;
+                margin-left: 108px;
+            }
+            .top label{
+                font-size: 30px;
+                font-weight:bold;
+                color: #8A4C13;
+            }
+            .top input{
+                margin-left: 20px;
+                border: 0;
+                border-radius: 10px;
+                width: 370px;
+                height: 60px;
+                background-color: #65451F;
+                color: #ffffff;
+                font-size: 30px;
+                outline: none;
+            }
+            .bottom{
+                margin-top: 20px;
+                height: 60px;
+                width: 767px;
+                margin-left: 108px;
+            }
+            .bottom label{
+                font-size: 30px;
+                font-weight:bold;
+                color: #8A4C13;
+            }
+            .bottom input{
+                margin-left: 20px;
+                border: 0;
+                border-radius: 10px;
+                width: 370px;
+                height: 60px;
+                background-color: #65451F;
+                color: #ffffff;
+                font-size: 30px;
+                outline: none;
+            }
+            .btn{
+                width: 767px;
+                text-align: center;
+            }
+            .btn img{
+                margin-top: 10px;
+            }
+            .lo{
+                position: absolute;
+                top:695px;
+                left:920px;
+            }
+        </style>
+	</head>
+	<body>
+		<div class="bg">
+            <div class="bp" style="display: none">
+                <div class="bg">
+                    <div class="login_world">
+                        <!--<div class="loginning"></div>-->
+                        <!--<div class="please_login"></div>-->
+                    </div>
+                    <div class="lo">
+                        <img src="imgs/login-imgs/please-brush-card.gif">
+                    </div>
+                </div>
+            </div>
+			<div class="pc" style="display: block">
+                <div class="xbj">
+                    <img src="imgs/login-imgs/login-bj.png">
+                </div>
+                <div class="sr">
+                    <p>请输入学号密码或直接刷卡登录!</p>
+                    <div class="top">
+                        <label>学号:</label><input type="text" value=""/>
+                    </div>
+                    <div class="bottom">
+                        <label>密码:</label><input type="password" value=""/>
+                    </div>
+                    <div class="btn">
+                        <img src="imgs/login-imgs/login-btn.png">
+                    </div>
+                </div>
+			</div>
+		</div>
+		<!--加载ip头部信息-->
+		<script>
+            var card ="";
+            var deviceId ="";
+               if(window.SchoolScore){
+                   $('.bp').css({display:"block"});
+                   $('.pc').css({display:"none"});
+                   card = window.SchoolScore.getCardId();
+                   deviceId = window.SchoolScore.getDevId();
+                   if(card=='' || card==undefined){
+
+                   }else{
+                       begin(card);
+                   }
+               }else{
+                   $('.bp').css({display:"none"});
+                   $('.pc').css({display:"block"});
+                   var x= window.location.search;
+                   if(x=='' || x==null){
+                       //学号密码登录
+                       $('.btn').on('click',function(){
+                           var xuehao=$('.top input').val();
+                           var mima=$('.bottom input').val();
+                           if(xuehao =='' || mima==''){
+                               alert("请输入学号和密码");
+                           }else{
+                               $.ajax({
+                                   type:'get',
+                                   data:{
+                                       studentid:xuehao,
+                                       password:mima
+                                   },
+                                   dataType:'jsonp',
+                                   url:'http://139.219.184.67/school/mallItemsManage_listMallItemsInfo.do?method=getGameTeachingInfoForUserLogin',
+                                   success:function(d){
+                                       if(localStorage.getItem("deviceId")){
+                                           localStorage.setItem("deviceId","");
+                                       }else{}
+                                       console.log(d.msg);
+                                       if(d.msg !='success'){
+                                              alert("请输入正确的学号和密码");
+                                       }else{
+                                           card= d.data.card;
+                                           begin(card);
+                                       }
+//
+                                   },
+                                   error:function(err){
+                                       console.log(err);
+                                   }
+                               })
+                           }
+
+                       })
+                   }else{
+                       //新接口后面加设备获取卡号
+                       deviceId= x.split('?')[1].split('=')[1];
+                       //班牌上的浏览器打开
+                       localStorage.setItem('deviceId',deviceId);
+                       if(deviceId==""){
+//                           alert('设备号未导入');
+                       }else{
+                           var time=setInterval(function(){
+                               $.ajax({
+                                   type:'get',
+                                   data:{
+                                       devid:deviceId
+                                   },
+                                   dataType:'jsonp',
+                                   url:'http://139.219.184.67/school/mallItemsManage_listMallItemsInfo.do?method=getDevCard',
+                                   success:function(d){
+                                       if( card==null || card=='' || card==undefined){
+
+                                       }else{
+                                           card= d.cardno;
+                                           localStorage.setItem('card',card);
+                                           clearInterval(time);
+                                           begin(card);
+                                       }
+                                   },
+                                   error:function(err){
+                                       console.log(err);
+                                   }
+                               });
+                           },1000);
+
+                               $('.btn').on('click',function(){
+                                   var xuehao=$('.top input').val();
+                                   var mima=$('.bottom input').val();
+                                   if(xuehao =='' || mima=='') {
+                                       alert('请输入学号密码')
+                                   }else{
+                                       $.ajax({
+                                           type:'get',
+                                           data:{
+                                               studentid:xuehao,
+                                               password:mima
+                                           },
+                                           dataType:'jsonp',
+                                           url:'http://139.219.184.67/school/mallItemsManage_listMallItemsInfo.do?method=getGameTeachingInfoForUserLogin',
+                                           success:function(d){
+                                               if(d.msg !='success'){
+                                                   alert('请输入正确的学号密码');
+                                               }else{
+                                                   card= d.data.card;
+                                                   begin(card);
+                                                   clearInterval(time);
+                                               }
+                                           },
+                                           error:function(err){
+                                               console.log(err);
+                                           }
+                                       });
+                                   }
+
+                               })
+                       }
+                   }
+
+               }
+
+			function begin(card){
+				$.ajax({
+//			传入的回调函数
+				type:"get",
+				data:{
+					card:card,
+					deviceId:deviceId
+				},
+				dataType:"jsonp",
+				url:"http://139.219.184.67/school/mallItemsManage_listMallItems.do?method=getGameTeachingInfo",
+				success:function(result){
+//                    alert(JSON.stringify(result));
+                    localStorage.setItem("integral",result.data.countIntegral);
+                    var count=0;
+                    for(var i=0;i<result.datacount.length;i++){
+                         count+=parseInt(result.datacount[i].count);
+                    }
+                    localStorage.setItem("isshowintegralmall",result.isshowintegralmall);
+                    localStorage.setItem("picsummary",result.data.picsummary);
+                    localStorage.setItem("medalpic",result.medalpic);
+                    localStorage.setItem("nickname",decodeURI(result.data.nickname));
+                    localStorage.setItem("count",count);
+//                    $('.num_card').html(count);
+					localStorage.setItem("stuid",result.data.stuid);
+					localStorage.setItem("sid",result.data.sid);
+					localStorage.setItem("userid",result.data.userid);
+					localStorage.setItem("classid",result.data.classid);
+					localStorage.setItem("gradeid",result.data.gradeid);
+                    localStorage.setItem("card",result.data.card);
+//                    localStorage.setItem("deviceId",result.data.deviceId);
+					window.location.href = "main.html";
+				},
+				error:function(){
+//                    $.ajax({
+//                        type:"GET",
+//                        url:"test.json",
+//                        async:true,
+//                        success:function(result){
+//                            localStorage.setItem("integral",result.data.countIntegral);
+//                            console.log(result);
+//                            var count=0;
+//                            for(var i=0;i<result.datacount.length;i++){
+//                                count+=parseInt(result.datacount[i].count);
+//                            }
+//                            localStorage.setItem("picsummary",result.data.picsummary);
+//                            localStorage.setItem("nickname",decodeURI(result.data.nickname));
+//                            localStorage.setItem("count",count);
+////                    $('.num_card').html(count);
+//                            localStorage.setItem("stuid",result.data.stuid);
+//                            localStorage.setItem("sid",result.data.sid);
+//                            localStorage.setItem("userid",result.data.userid);
+//                            localStorage.setItem("classid",result.data.classid);
+//                            localStorage.setItem("gradeid",result.data.gradeid);
+//                            localStorage.setItem("card",result.data.card);
+////                    localStorage.setItem("deviceId",result.data.deviceId);
+//                            window.location.href = "main.html";
+//                        }
+//                    });
+				},
+				async:true
+			});
+			}
+
+			
+		</script>
+		<script>
+            var imgsList = [
+                {"img":"imgs/login-imgs/login-bj.png"},
+                {"img":"imgs/login-imgs/login-btn.png"},
+                {"img":"imgs/loading/0-11.gif"},
+                {"img":"imgs/login-imgs/login.png"},
+                {"img":"imgs/login-imgs/login-bg.gif"},
+                {"img":"imgs/login-imgs/queding.png"},
+                {"img":"imgs/login-imgs/quxiao.png"},
+                {"img":"imgs/login-imgs/please-brush-card.gif"},
+                {"img":"imgs/wo_de_wu_pin/active_header.png"},
+                {"img":"imgs/wo_de_wu_pin/blue.png"},
+                {"img":"imgs/wo_de_wu_pin/bluex.png"},
+                {"img":"imgs/wo_de_wu_pin/btn_close.png"},
+//                {"img":"imgs/wo_de_wu_pin/btn_close_1.png"},
+                {"img":"imgs/wo_de_wu_pin/card_bg.png"},
+//                {"img":"imgs/wo_de_wu_pin/card_chun_fen.png"},
+//                {"img":"imgs/wo_de_wu_pin/card_dong_zhi.png"},
+//                {"img":"imgs/wo_de_wu_pin/card_lang_lai_le.png"},
+//                {"img":"imgs/wo_de_wu_pin/card_panda.png"},
+//                {"img":"imgs/wo_de_wu_pin/card_spiri_girl.png"},
+//                {"img":"imgs/wo_de_wu_pin/card_wa_xian_zi.png"},
+//                {"img":"imgs/wo_de_wu_pin/card_xiao_chou_yong_shi.png"},
+//                {"img":"imgs/wo_de_wu_pin/card_xiao_hong_mao.png"},
+//                {"img":"imgs/wo_de_wu_pin/card_yu_shui.png"},
+                {"img":"imgs/wo_de_wu_pin/chun_fen_fan_mian.png"},
+                {"img":"imgs/wo_de_wu_pin/chun_fen_shuo_ming.png"},
+                {"img":"imgs/wo_de_wu_pin/content_bg.png"},
+                {"img":"imgs/wo_de_wu_pin/detail.png"},
+                {"img":"imgs/wo_de_wu_pin/dj.png"},
+                {"img":"imgs/wo_de_wu_pin/dongzhi.png"},
+                {"img":"imgs/wo_de_wu_pin/green.png"},
+                {"img":"imgs/wo_de_wu_pin/greenx.png"},
+                {"img":"imgs/wo_de_wu_pin/inner_bg.png"},
+//                {"img":"imgs/wo_de_wu_pin/li_bg.png"},
+//                {"img":"imgs/wo_de_wu_pin/li_dz_fu_chen.png"},
+//                {"img":"imgs/wo_de_wu_pin/li_fhdjb.png"},
+//                {"img":"imgs/wo_de_wu_pin/li_fss.png"},
+//                {"img":"imgs/wo_de_wu_pin/li_hl_sao_ba.png"},
+//                {"img":"imgs/wo_de_wu_pin/li_mfsys.png"},
+//                {"img":"imgs/wo_de_wu_pin/li_nw_sao_ba.png"},
+//                {"img":"imgs/wo_de_wu_pin/li_smjz.png"},
+//                {"img":"imgs/wo_de_wu_pin/li_ysd.png"},
+                {"img":"imgs/wo_de_wu_pin/nav_left.png"},
+                {"img":"imgs/wo_de_wu_pin/new_roof.png"},
+                {"img":"imgs/wo_de_wu_pin/normal_header.png"},
+                {"img":"imgs/wo_de_wu_pin/red.png"},
+                {"img":"imgs/wo_de_wu_pin/redx.png"},
+                {"img":"imgs/wo_de_wu_pin/use.png"},
+                {"img":"imgs/wo_de_wu_pin/wodewuping2.png"},
+                {"img":"imgs/wo_de_wu_pin/yushui.png"},
+                {"img":"imgs/wo_de_xiao_xi/ban.png"},
+                {"img":"imgs/wo_de_xiao_xi/btn_back.png"},
+                {"img":"imgs/wo_de_xiao_xi/dao.png"},
+                {"img":"imgs/wo_de_xiao_xi/inner_bg.png"},
+                {"img":"imgs/wo_de_xiao_xi/ka.png"},
+                {"img":"imgs/wo_de_xiao_xi/li.png"},
+                {"img":"imgs/wo_de_xiao_xi/read_and_no.png"}
+
+
+
+            ];
+            var currentLoadNum = 0;
+            for (var i = 0; i < imgsList.length; i++) {
+                var _img = document.createElement("img");
+                _img.src = imgsList[i].img;
+                console.log(_img);
+                _img.onload = function(){
+                    currentLoadNum++;
+                    //					console.log('当前加载了'+currentLoadNum+"////总共图片数是"+imgsList.length);
+                    console.log(currentLoadNum==imgsList.length)
+                    if(currentLoadNum==imgsList.length){
+                        //					console.log("加载完成了");
+                        setTimeout(function(){
+                            console.log('success');
+                            $(".loadding_gif").css({display:'none'});
+                            $("#main").css({display:'block'});
+                        });
+
+                    };
+                }
+            }
+
+
+        </script>
+        <script src="js/ripple.js"></script>
+	</body>
+</html>
